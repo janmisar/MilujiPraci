@@ -1,0 +1,15 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+
+    #import <AVHexColor/AVHexColor.h>
+
+#endif
+
+#define kTileColor [AVHexColor colorWithHex:0x44a3aa]
+#define kTileSelectedColor [AVHexColor colorWithHex:0x158489]
