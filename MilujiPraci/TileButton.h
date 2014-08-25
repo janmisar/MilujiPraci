@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class TileButton;
+
 @interface TileButton : NSButton
 
 @end

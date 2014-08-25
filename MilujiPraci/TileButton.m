@@ -27,6 +27,7 @@
     NSMutableAttributedString *colorTitle = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedTitle]];
     NSRange titleRange = NSMakeRange(0, [colorTitle length]);
     [colorTitle addAttribute:NSForegroundColorAttributeName value:color range:titleRange];
+    [colorTitle addAttribute:NSFontAttributeName value:[NSFont systemFontOfSize:10] range:titleRange];
     [self setAttributedTitle:colorTitle];
 }
 
@@ -35,11 +36,17 @@
 }
 
 - (void)mouseDown:(NSEvent *)theEvent {
-   [[self cell] setBackgroundColor:kTileSelectedColor];
+    [[self cell] setBackgroundColor:kTileSelectedColor];
+    
+    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%ld",(long)self.tag] ofType:@"mp3"];
+    NSSound *sound = [[NSSound alloc] initWithContentsOfFile:resourcePath byReference:YES];
+    [sound play];
 }
 
 - (void)mouseUp:(NSEvent *)theEvent {
     [[self cell] setBackgroundColor:kTileColor];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"tileClicked" object:nil];
 }
 
 @end

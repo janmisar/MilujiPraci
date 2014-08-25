@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "TileButton.h"
 
 @interface MainViewController : NSViewController
+
+@property (nonatomic, assign) NSInteger selectedIndex;
 
 @end

@@ -36,8 +36,14 @@
         _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:(ImageViewWidth)];
         _statusItem.view = self;
         
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hidePopover) name:@"tileClicked" object:nil];
+        
     }
     return self;
+}
+
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
