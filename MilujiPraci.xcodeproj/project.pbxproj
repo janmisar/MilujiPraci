@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1388BF85B9804CEF9AC64AA2 /* libPods-MilujiPraci.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 200389DEBF2D4643BD3526F2 /* libPods-MilujiPraci.a */; };
+		17077DED19ADBCD40032A775 /* statusBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17077DEC19ADBCD40032A775 /* statusBarIcon@2x.png */; };
 		174886FE19AA02BD0081FA52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174886FD19AA02BD0081FA52 /* Cocoa.framework */; };
 		1748870819AA02BD0081FA52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1748870619AA02BD0081FA52 /* InfoPlist.strings */; };
 		1748870A19AA02BD0081FA52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1748870919AA02BD0081FA52 /* main.m */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17077DEC19ADBCD40032A775 /* statusBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "statusBarIcon@2x.png"; path = "Resources/statusBarIcon@2x.png"; sourceTree = "<group>"; };
 		174886FA19AA02BD0081FA52 /* MilujiPraci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MilujiPraci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		174886FD19AA02BD0081FA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1748870019AA02BD0081FA52 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -242,6 +244,7 @@
 		1748874219ABA2DA0081FA52 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17077DEC19ADBCD40032A775 /* statusBarIcon@2x.png */,
 				1748874A19ABB6AA0081FA52 /* 0.mp3 */,
 				1748874B19ABB6AA0081FA52 /* 1.mp3 */,
 				1748874C19ABB6AA0081FA52 /* 2.mp3 */,
@@ -377,6 +380,7 @@
 				1748877819ABD4640081FA52 /* 16.mp3 in Resources */,
 				1748875C19ABB6AA0081FA52 /* 3.mp3 in Resources */,
 				1748873819AA09560081FA52 /* MainViewController.xib in Resources */,
+				17077DED19ADBCD40032A775 /* statusBarIcon@2x.png in Resources */,
 				1748875919ABB6AA0081FA52 /* 0.mp3 in Resources */,
 				1748878019ABD4640081FA52 /* 24.mp3 in Resources */,
 				1748876619ABB6AA0081FA52 /* 13.mp3 in Resources */,

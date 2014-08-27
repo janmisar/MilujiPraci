@@ -11,6 +11,5 @@
 
 @interface MainViewController : NSViewController
 
-@property (nonatomic, assign) NSInteger selectedIndex;
-
+- (IBAction)quitAction:(NSButton *)sender;
 @end

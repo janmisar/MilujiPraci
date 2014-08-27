@@ -18,13 +18,12 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self addObserver:self forKeyPath:@"selectedIndex" options:NSKeyValueObservingOptionInitial context:nil];
+        
     }
     return self;
 }
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    NSLog(@"%ld",(long)self.selectedIndex);
+- (IBAction)quitAction:(NSButton *)sender {
+    [[NSApplication sharedApplication] terminate:nil];
 }
-
 @end

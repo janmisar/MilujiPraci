@@ -22,7 +22,6 @@
 -(void)awakeFromNib {
     [[self cell] setBackgroundColor:kTileColor];
     
-    
     NSColor *color = [NSColor whiteColor];
     NSMutableAttributedString *colorTitle = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedTitle]];
     NSRange titleRange = NSMakeRange(0, [colorTitle length]);

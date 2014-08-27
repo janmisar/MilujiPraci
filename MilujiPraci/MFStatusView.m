@@ -25,15 +25,16 @@
 
 - (id)init {
     CGFloat height = [NSStatusBar systemStatusBar].thickness;
-    self = [super initWithFrame:NSMakeRect(0, 0, ImageViewWidth, height)];
+    self = [super initWithFrame:NSMakeRect(0, 0, height, height)];
     if (self) {
         
         _active = NO;
         
-        _imageView = [[NSImageView alloc] initWithFrame:NSMakeRect(0, 0, ImageViewWidth, height)];
+        _imageView = [[NSImageView alloc] initWithFrame:NSMakeRect(3, 3, height-6, height-6)];
+        _imageView.image = [NSImage imageNamed:@"statusBarIcon"];
         [self addSubview:_imageView];
 
-        _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:(ImageViewWidth)];
+        _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:(height)];
         _statusItem.view = self;
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hidePopover) name:@"tileClicked" object:nil];
@@ -57,7 +58,6 @@
 }
 
 - (void)mouseDown:(NSEvent *)theEvent {
-    [self setActive:YES];
     
     if(_popover.isShown) {
         [self hidePopover];
@@ -65,21 +65,15 @@
         if(_contentViewController)
             [self showPopoverWithViewController:_contentViewController];
     }
-    
 }
 
 - (void)mouseUp:(NSEvent *)theEvent {
-    [self setActive:NO];
-}
-
-- (void)updateUI {
-    _imageView.image = [NSImage imageNamed:_active ? @"mf-image-white" : @"mf-image-black"];
-    [self setNeedsDisplay:YES];
+    
 }
 
 - (void)setActive:(BOOL)active {
     _active = active;
-    [self updateUI];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)showPopoverWithViewController:(NSViewController *)viewController {
@@ -92,11 +86,13 @@
                               ofView:self
                        preferredEdge:NSMinYEdge];
     }
+    [self setActive:YES];
 }
 
 - (void)hidePopover {
     if (_popover != nil && _popover.isShown) {
         [_popover close];
+        [self setActive:NO];
     }
 }
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F3E54580-FAD1-4F1B-8AB0-64D474746ADC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MilujiPraci</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AEE70A1F-7789-41F6-B2B6-ABA6421E8478</key>
+		<string>https://bitbucket.org/janmisar/milujipraci.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MilujiPraci.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AEE70A1F-7789-41F6-B2B6-ABA6421E8478</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/janmisar/milujipraci.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AEE70A1F-7789-41F6-B2B6-ABA6421E8478</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AEE70A1F-7789-41F6-B2B6-ABA6421E8478</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MilujiPraci</string>
+		</dict>
+	</array>
+</dict>
+</plist>
